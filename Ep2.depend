@@ -45,7 +45,7 @@
 	<string>
 	"Segmento.h"
 
-1606753363 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\main.cpp
+1606755947 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\main.cpp
 	<iostream>
 	"Datagrama.h"
 	"TabelaDeRepasse.h"
@@ -96,4 +96,15 @@
 	"Processo.h"
 	"ServidorWeb.h"
 	"Navegador.h"
+
+1606761673 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\rede.cpp
+	"Rede.h"
+
+1606758467 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\rede.h
+	<iostream>
+	<list>
+	<vector>
+	<stdexcept>
+	"No.h"
+	"Hospedeiro.h"
 
