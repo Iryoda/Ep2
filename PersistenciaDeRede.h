@@ -3,19 +3,19 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 
 #include "Rede.h"
 
-class Rede;
 class PersistenciaDeRede
 {
     public:
-        PersistenciaDeRede();
-        virtual ~PersistenciaDeRede();
-
-    protected:
-
+      PersistenciaDeRede();
+      virtual ~PersistenciaDeRede();
+      virtual Rede* carregar(string arquivo);
     private:
+        Rede* rede;
+
 };
 
 #endif // PERSISTENCIADEREDE_H

@@ -9,6 +9,8 @@
 #include "No.h"
 #include "Hospedeiro.h"
 
+#include <vector>
+
 using namespace std;
 
 class Rede

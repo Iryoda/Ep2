@@ -26,7 +26,8 @@ void Roteador::processar() {
 
     cout << "Roteador " << this->endereco << endl;
     if(!datagrama->ativo()) {//Verifica se o datagrama tem ttl > 0
-        cout << "\tDestruido por TTL: Origem: " << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino() << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado() << endl;
+        cout << "\tDestruido por TTL: Origem: "  << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino() << ", TTL: 0,"
+        << datagrama->getDado()->getDado() << endl;
         delete datagrama;
         return;
     }
@@ -34,10 +35,18 @@ void Roteador::processar() {
     int enderecoDatagrama = datagrama->getDestino();
 
     if(enderecoDatagrama == endereco) {
+        cout << "\tRecebido: Origem: " << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino()
+        << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado()->getDado() << endl;
         delete datagrama;
     } else {
+        if(tabela->getDestino(enderecoDatagrama) == NULL) {
+            cout << "\tSemProximo: Origem: " << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino()
+            << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado()->getDado() << endl;
+        }
+
         //Retorna o roteador que tem o endereço caso não tiver retorna o padrão, e envia o datagrama para ele.
-        cout << "\tEnviado para " << tabela->getDestino(enderecoDatagrama)->getEndereco() << " Origem: " << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino() << ", TTL: " << datagrama->getTtl() <<endl;
+        cout << "\tEnviado para " << tabela->getDestino(enderecoDatagrama)->getEndereco() << ": Origem: " << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino()
+        << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado()->getDado() << endl;
         tabela->getDestino(enderecoDatagrama)->receber(datagrama);
     }
 }

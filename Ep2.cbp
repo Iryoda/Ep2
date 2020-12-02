@@ -44,8 +44,12 @@
 		<Unit filename="Navegador.h" />
 		<Unit filename="No.cpp" />
 		<Unit filename="No.h" />
+		<Unit filename="PersistenciaDeRede.cpp" />
+		<Unit filename="PersistenciaDeRede.h" />
 		<Unit filename="Processo.cpp" />
 		<Unit filename="Processo.h" />
+		<Unit filename="Rede.cpp" />
+		<Unit filename="Rede.h" />
 		<Unit filename="Roteador.cpp" />
 		<Unit filename="Roteador.h" />
 		<Unit filename="Segmento.cpp" />
@@ -54,6 +58,7 @@
 		<Unit filename="ServidorWeb.h" />
 		<Unit filename="TabelaDeRepasse.cpp" />
 		<Unit filename="TabelaDeRepasse.h" />
+		<Unit filename="arquivo.txt" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

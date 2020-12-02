@@ -45,9 +45,16 @@ No* Rede::getNo(int endereco)
 
 list<Hospedeiro*>* Rede::getHospedeiros()
 {
+    for(unsigned int i = 0; i < nos->size(); i++){
+
+    Hospedeiro* h1 = dynamic_cast<Hospedeiro*>((*nos)[i]);
+
+    if( h1 != NULL){
+        hospedeiros->push_back(h1);
+    }
+}
     return hospedeiros;
 }
-
 void Rede::passarTempo()
 {
     for(unsigned int i = 0; i < nos->size(); i++)

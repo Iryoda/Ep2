@@ -45,11 +45,17 @@
 	<string>
 	"Segmento.h"
 
-1606755947 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\main.cpp
+1606935382 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\main.cpp
 	<iostream>
-	"Datagrama.h"
-	"TabelaDeRepasse.h"
-	"No.h"
+	<fstream>
+	<stdexcept>
+	<list>
+	"PersistenciaDeRede.h"
+	"Rede.h"
+	"Roteador.h"
+	"Hospedeiro.h"
+	"ServidorWeb.h"
+	"Navegador.h"
 
 1606754843 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\no.h
 	<iostream>
@@ -80,7 +86,7 @@
 1606752579 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\roteador.cpp
 	"Roteador.h"
 
-1606753553 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\hospedeiro.cpp
+1606934044 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\hospedeiro.cpp
 	"Hospedeiro.h"
 
 1606753237 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\hospedeiro.h
@@ -97,14 +103,25 @@
 	"ServidorWeb.h"
 	"Navegador.h"
 
-1606761673 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\rede.cpp
+1606935575 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\rede.cpp
 	"Rede.h"
 
-1606758467 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\rede.h
+1606932533 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\rede.h
 	<iostream>
 	<list>
 	<vector>
 	<stdexcept>
 	"No.h"
 	"Hospedeiro.h"
+	<vector>
+
+1606934549 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\persistenciaderede.cpp
+	"PersistenciaDeRede.h"
+	"Roteador.h"
+
+1606929511 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\persistenciaderede.h
+	<iostream>
+	<string>
+	<fstream>
+	"Rede.h"
 
