@@ -2,6 +2,7 @@
 #include <fstream>
 #include <stdexcept>
 #include <list>
+#include<string>
 
 #include "PersistenciaDeRede.h"
 #include "Rede.h"
@@ -12,30 +13,27 @@
 
 using namespace std;
 
-void imprimirHospedeiro( Rede* rede){
+void imprimirHospedeiro(Rede* rede) {
+    int tamanhoList = rede->getHospedeiros()->size();
+    int tamanhoVector;
+    Hospedeiro* hospedeiro;
+    list<Hospedeiro*>* hospedeiros = new list<Hospedeiro*>();
+    hospedeiros = rede->getHospedeiros();
 
-    int tamanho = rede->getHospedeiros()->size();
+    for(int i = 0; i < tamanhoList; i++) {
+        hospedeiro = hospedeiros->front();
+        cout << "Hospedeiro " << hospedeiro->getEndereco() << endl;
+        tamanhoVector = hospedeiro->getProcessos()->size();
 
-    for(int i = 0; i < tamanho; i++){
+        for(int j = 0; j < tamanhoVector; j++) {
+            Navegador *navegador = dynamic_cast<Navegador*>(hospedeiro->getProcessos()->at(j));
 
-        Hospedeiro* h1 = rede->getHospedeiros()->front();
-        cout << "Hospedeiro " << h1->getEndereco() << endl;
-
-        for( int j = 0; j < h1->getProcessos()->size(); j++ ){
-
-            Processo* p1 = h1->getProcessos()->pop_back();
-
-            Navegador* n1 = dynamic_cast<Navegador*>(p1);
-
-            if( n1 != NULL){
-                cout << "\tNavegador " << p1->getEndereco() << endl;
-            } else {
-                cout << "\tServidorWeb " << p1->getEndereco() << endl;
-            }
-
+            if(navegador != NULL)
+                cout << "\tNavegador " << navegador->getPorta();
+            else
+                cout << "\tServidorWeb " << hospedeiro->getProcessos()->at(j)->getPorta();
         }
-
-        h1 = rede->getHospedeiros()->pop_front();
+        hospedeiros->pop_front();
     }
 }
 
@@ -46,14 +44,15 @@ void imprimirHospedeiro( Rede* rede){
 int main()
 {
     int opcao;
+    int sair;
     string arquivo;
 
     Rede* rede = new Rede();
 
     PersistenciaDeRede* pr = new PersistenciaDeRede();
 
-    cout << "Digite o nome do arquivo: " << end;
-    cin >> arquivo
+    cout << "Digite o nome do arquivo: " << endl;
+    cin >> arquivo;
 
     pr->carregar(arquivo);
 
@@ -64,13 +63,12 @@ int main()
         <<"2) Passar Tempo" << endl
         <<"3) Alterar TTL" << endl
         <<"4) Sair" << endl
-        <<"Escolha uma opcao: " << end;
-        cin << opcao;
+        <<"Escolha uma opcao: " << endl;
+        cin >> opcao;
 
 
-        if(opcao == 1){
-
-        }
+        if(opcao == 1)
+            imprimirHospedeiro(rede);
     }
 
 
@@ -82,8 +80,7 @@ int main()
 
 
 
-    /*
-    try {
+    /*try {
         rede = pr->carregar("arquivo.txt");
     }catch (logic_error* e){
         cout << e->what() << endl;
@@ -93,8 +90,7 @@ int main()
 
     Hospedeiro* h1 =  rede->getHospedeiros()->back();//Lista com hospedeiros
     Roteador* r1 =  dynamic_cast<Roteador*>(rede->getNo(1));
-    Roteador* r2 = dynamic_cast<Roteador*>(rede->getNo(2));
-    */
+    Roteador* r2 = dynamic_cast<Roteador*>(rede->getNo(2));*/
 
 
 
