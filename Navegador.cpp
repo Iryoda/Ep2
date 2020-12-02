@@ -26,7 +26,6 @@ void Navegador::abrir(int endereco, int porta)
     conteudo = "";
     emEspera = true;
 
-
 }
 
 void Navegador::abrir(int endereco)
