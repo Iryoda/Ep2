@@ -39,7 +39,6 @@ Processo* Hospedeiro::getProcesso(int porta) {
 
 void Hospedeiro::processar() {
     Datagrama *datagrama;
-    int destino;
 
     try {
         datagrama = fila->dequeue();
@@ -48,21 +47,17 @@ void Hospedeiro::processar() {
         return;
     }
 
-    destino = datagrama->getDado()->getPortaDeDestino();
+    Processo *processo = getProcesso(datagrama->getDado()->getPortaDeDestino());
+    Navegador *navegador = dynamic_cast<Navegador*>(processo);
 
-    for(unsigned int i = 0; i < processos->size(); i++) {
-        if(processos->at(i)->getPorta() == destino) {
-            Navegador *navegador = dynamic_cast<Navegador*>(processos->at(i));
-
-            if(navegador != NULL) {
-                navegador->receber(datagrama->getOrigem(), datagrama->getDado());
-                delete datagrama;
-                return;
-            }
-            ServidorWeb *servidorWeb = dynamic_cast<ServidorWeb*>(processos->at(i));
-            servidorWeb->receber(datagrama->getOrigem(), datagrama->getDado());
-        }
+    if(navegador != NULL) {
+        navegador->receber(datagrama->getOrigem(), datagrama->getDado());
+        delete datagrama;
+        return;
     }
+    ServidorWeb *servidorWeb = dynamic_cast<ServidorWeb*>(processo);
+    servidorWeb->receber(datagrama->getOrigem(), datagrama->getDado());
+
     delete datagrama;
 }
 
