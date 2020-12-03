@@ -21,8 +21,8 @@ void No::receber(Datagrama *d) {
     try {
         fila->enqueue(d);
     } catch (overflow_error *e) {
-    cout << "\tFila em " << endereco << " estourou" << endl;
-    delete e;
+        cout << "\tFila em " << endereco << " estourou" << endl;
+        delete e;
     }
 }
 

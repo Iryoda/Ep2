@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 Fila::Fila(int tamanho){
     datagramas = new list<Datagrama*>();
     this->tamanho = tamanho;
@@ -10,31 +9,33 @@ Fila::Fila(int tamanho){
 }
 
 Fila::~Fila() {
-    delete []datagramas;
+    delete datagramas;
 }
 
 void Fila::enqueue(Datagrama* d){
-    if(quantidade < tamanho) {
+    if(datagramas->size() < tamanho) {
         datagramas->push_back(d);
         quantidade++;
     }
-    else
-        throw new overflow_error("erro");
+    else{
+        throw new overflow_error("Fila estorou");
+    }
 }
 
 bool Fila::isEmpty(){
     if(datagramas->empty()) {
         return true;
     }
-    else
+    else{
         return false;
+    }
 }
 
 Datagrama* Fila::dequeue(){
     Datagrama *d;
 
-    if(isEmpty()){
-        throw new underflow_error("erro");
+    if(datagramas->empty()){
+        throw new underflow_error("Fila está vazia");
     }
     d = datagramas->front();
     datagramas->pop_front();

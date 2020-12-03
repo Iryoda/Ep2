@@ -25,7 +25,7 @@ public:
 
 protected:
     int endereco;
-    Fila *fila;
+    Fila* fila;
 };
 
 #endif // NO_H

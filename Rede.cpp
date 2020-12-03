@@ -6,10 +6,9 @@ Rede::Rede()
     nos = new vector<No*>();
 }
 
-
 Rede::~Rede(){
-    delete [] nos;
-    delete [] hospedeiros;
+    delete nos;
+    delete hospedeiros;
 }
 
 void Rede::adicionar(No* no)

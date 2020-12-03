@@ -263,10 +263,10 @@
 1607019172 c:\users\augus\desktop\poli\c++\ep2\segmento.h
 	<iostream>
 
-1607021726 source:c:\users\augus\desktop\poli\c++\ep2\fila.cpp
+1607025881 source:c:\users\augus\desktop\poli\c++\ep2\fila.cpp
 	"Fila.h"
 
-1607019172 c:\users\augus\desktop\poli\c++\ep2\fila.h
+1607025093 c:\users\augus\desktop\poli\c++\ep2\fila.h
 	<stdexcept>
 	<iostream>
 	<list>
@@ -293,7 +293,7 @@
 	"No.h"
 	<iostream>
 
-1607024110 c:\users\augus\desktop\poli\c++\ep2\no.h
+1607024751 c:\users\augus\desktop\poli\c++\ep2\no.h
 	<iostream>
 	<stdexcept>
 	"Fila.h"
@@ -323,7 +323,7 @@
 	"Datagrama.h"
 	"ServidorWeb.h"
 
-1607021972 source:c:\users\augus\desktop\poli\c++\ep2\main.cpp
+1607026166 source:c:\users\augus\desktop\poli\c++\ep2\main.cpp
 	<iostream>
 	<fstream>
 	<stdexcept>
@@ -351,7 +351,7 @@
 	"Hospedeiro.h"
 	<vector>
 
-1607021740 source:c:\users\augus\desktop\poli\c++\ep2\no.cpp
+1607025337 source:c:\users\augus\desktop\poli\c++\ep2\no.cpp
 	"No.h"
 
 1607023050 source:c:\users\augus\desktop\poli\c++\ep2\persistenciaderede.cpp
@@ -372,4 +372,10 @@
 
 1607021777 source:c:\users\augus\desktop\poli\c++\ep2\tabeladerepasse.cpp
 	"TabelaDeRepasse.h"
+
+1607023765 source:c:\users\augus\desktop\poli\c++\ep2\navegador.cpp
+	"Navegador.h"
+
+1607023770 source:c:\users\augus\desktop\poli\c++\ep2\servidorweb.cpp
+	"ServidorWeb.h"
 

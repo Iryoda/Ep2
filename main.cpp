@@ -124,10 +124,36 @@ int main()
             Processo::setTtlPadrao(ttl);
         }
 
-        if(opcao == 4)
-            sair = true;
-    }
+        if(opcao == 4) sair = true;
+        /*
+        if(opcao == 5){
+            Fila* f1 = new Fila(3);
+            Segmento* s1 = new Segmento(1000, 2000, "ula ula");
 
+            Datagrama* d1 = new Datagrama(1, 2, 5, s1);
+            Datagrama* d2 = new Datagrama(2, 3, 5, s1);
+            Datagrama* d3 = new Datagrama(3, 4, 5, s1);
+            Datagrama* d4 = new Datagrama(5, 5, 5, s1);
+
+            cout << f1->isEmpty() << endl;
+            try
+            {
+                f1->enqueue(d1);
+                f1->enqueue(d2);
+                f1->enqueue(d3);
+                f1->dequeue();
+                f1->enqueue(d4);
+            }catch(underflow_error *e){
+                cout << e->what() << endl;
+            }catch(overflow_error *e){
+                cout << e->what() << endl;
+            }
+
+
+            cout << f1->isEmpty() << endl;
+        }
+        */
+    }
 
     return 0;
 }
