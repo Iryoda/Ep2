@@ -35,17 +35,18 @@ void Roteador::processar() {
     int enderecoDatagrama = datagrama->getDestino();
 
     if(enderecoDatagrama == endereco) {
-        cout << "\tRecebido: Origem: " << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino()
-        << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado()->getDado() << endl;
+        cout << "\tRecebido: Origem: " << datagrama->getOrigem() << ":" << datagrama->getDado()->getPortaDeOrigem() << ", Destino: " << datagrama->getDestino()
+        << ":" << datagrama->getDado()->getPortaDeDestino() << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado()->getDado() << endl;
         delete datagrama;
     } else {
         if(tabela->getDestino(enderecoDatagrama) == NULL) {
-            cout << "\tSemProximo: Origem: " << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino()
-            << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado()->getDado() << endl;
+            cout << "\tSemProximo: Origem: " << datagrama->getOrigem() << ":" << datagrama->getDado()->getPortaDeOrigem() << ", Destino: " << datagrama->getDestino()
+            << ":" << datagrama->getDado()->getPortaDeDestino() << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado()->getDado() << endl;
         }
 
-        //Retorna o roteador que tem o endereÁo caso n„o tiver retorna o padr„o, e envia o datagrama para ele.
-        cout << "\tEnviado para " << tabela->getDestino(enderecoDatagrama)->getEndereco() << ": Origem: " << datagrama->getOrigem() << ", Destino: " << datagrama->getDestino()
+        //Retorna o roteador que tem o endere√ßo caso n√£o tiver retorna o padr√£o, e envia o datagrama para ele.
+        cout << "\tEnviado para " << tabela->getDestino(enderecoDatagrama)->getEndereco() << ": Origem: " << datagrama->getOrigem()
+        << ":" << datagrama->getDado()->getPortaDeOrigem() << ", Destino: " << datagrama->getDestino() << ":" << datagrama->getDado()->getPortaDeDestino()
         << ", TTL: " << datagrama->getTtl() << ", " << datagrama->getDado()->getDado() << endl;
         tabela->getDestino(enderecoDatagrama)->receber(datagrama);
     }
