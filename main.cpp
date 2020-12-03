@@ -84,7 +84,7 @@ int main()
             cin >> portaServidor;
 
             Hospedeiro *hospedeiro = dynamic_cast<Hospedeiro*>(rede->getNo(enderecoHospedeiro));
-            Navegador *navegador = dynamic_cast<Navegador*>(hospedeiro->getProcessos()->at(portaNavegador));
+            Navegador *navegador = dynamic_cast<Navegador*>(hospedeiro->getProcesso(portaNavegador));
             navegador->abrir(enderecoPagina, portaServidor);
         }
 
