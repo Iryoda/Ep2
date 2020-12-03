@@ -36,6 +36,7 @@ void imprimirHospedeiro(Rede* rede) {
         }
         hospedeiros->pop_front();
     }
+    cout << "" << endl;
 }
 
 
@@ -55,13 +56,14 @@ int main()
 
      try {
         rede = pr->carregar("arquivo.txt");
-    }catch (logic_error* e){
-        cout << e->what() << endl;
     }catch (invalid_argument* e){
+        cout << e->what() << endl;
+    }catch (logic_error* e){
         cout << e->what() << endl;
     }
 
-    while(!sair){
+    while(!sair) {
+        cout << "" << endl;
         cout << "Simulador de Rede"<< endl
         << "---"<< endl
         <<"1) Usar Navegador" << endl
@@ -70,6 +72,7 @@ int main()
         <<"4) Sair" << endl
         <<"Escolha uma opcao: ";
         cin >> opcao;
+        cout << "" << endl;
 
         if(opcao == 1) {
             imprimirHospedeiro(rede);
@@ -83,16 +86,34 @@ int main()
             cout << "Porta do Servidor Web: ";
             cin >> portaServidor;
 
-            Hospedeiro *hospedeiro = dynamic_cast<Hospedeiro*>(rede->getNo(enderecoHospedeiro));
-            Navegador *navegador = dynamic_cast<Navegador*>(hospedeiro->getProcesso(portaNavegador));
-            navegador->abrir(enderecoPagina, portaServidor);
+            if(rede->getNo(enderecoHospedeiro) != NULL) {
+                Hospedeiro *hospedeiro = dynamic_cast<Hospedeiro*>(rede->getNo(enderecoHospedeiro));
+
+                if(hospedeiro->getProcesso(portaNavegador) != NULL) {
+                    Navegador *navegador = dynamic_cast<Navegador*>(hospedeiro->getProcesso(portaNavegador));
+
+                    if(navegador != NULL) {
+                    navegador->abrir(enderecoPagina, portaServidor);
+
+                    } else {
+                        cout << "Porta Invalida" << endl;
+                    }
+                } else {
+                    cout << "Porta Invalida" << endl;
+                }
+            } else {
+                cout << "Endereco Invalido" << endl;
+            }
         }
 
         if(opcao == 2) {
             cout << "Quantidade de tempo: ";
             cin >> tempo;
-            for(int i = 0; i < tempo; i++)
+            for(int i = 0; i < tempo; i++) {
+                cout << "Instante " << i << endl;
+                cout << "---" << endl;
                 rede->passarTempo();
+            }
         }
 
         if(opcao == 3) {
