@@ -13,7 +13,8 @@ Fila::~Fila() {
 }
 
 void Fila::enqueue(Datagrama* d){
-    if(datagramas->size() < tamanho) {
+
+    if(quantidade < tamanho) {
         datagramas->push_back(d);
         quantidade++;
     }
