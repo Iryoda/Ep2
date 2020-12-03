@@ -39,6 +39,7 @@ Processo* Hospedeiro::getProcesso(int porta) {
 
 void Hospedeiro::processar() {
     Datagrama *datagrama;
+    cout << "Hospedeiro " << endereco << endl;
 
     try {
         datagrama = fila->dequeue();
