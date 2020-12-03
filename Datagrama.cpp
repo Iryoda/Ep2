@@ -12,7 +12,6 @@ Datagrama::Datagrama(int origem, int destino, int ttl, Segmento* dado)
 Datagrama::~Datagrama()
 {
     delete dado;
-    cout << "Datagrama destruído" << endl;
 }
 int Datagrama::getOrigem()
 {
