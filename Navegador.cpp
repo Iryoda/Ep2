@@ -12,11 +12,10 @@ Navegador::~Navegador()
 
 void Navegador::abrir(int endereco, int porta)
 {
-    int origem = gateway->getEndereco();
 
     //Cria um segmento e um datagrama
     Segmento* s1 = new Segmento(this-> porta, porta, "GET");
-    Datagrama*d1 = new Datagrama(origem, endereco, padrao, s1);
+    Datagrama*d1 = new Datagrama(this->endereco, endereco, padrao, s1);
 
     //Joga o datagrama no roteador
     gateway->receber(d1);
