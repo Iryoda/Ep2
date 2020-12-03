@@ -1,0 +1,375 @@
+# depslib dependency file v1.0
+1606937217 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\navegador.cpp
+	"Navegador.h"
+
+1606752960 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\navegador.h
+	"Processo.h"
+	"Datagrama.h"
+	"ServidorWeb.h"
+
+1606755910 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\processo.cpp
+	"Processo.h"
+
+1606755019 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\processo.h
+	<iostream>
+	"Roteador.h"
+	"Segmento.h"
+
+1606754653 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\servidorweb.cpp
+	"ServidorWeb.h"
+
+1606754303 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\servidorweb.h
+	"Roteador.h"
+	<string>
+	"Segmento.h"
+	"Processo.h"
+
+1606323526 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\tabeladerepasse.cpp
+	"TabelaDeRepasse.h"
+
+1606321805 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\tabeladerepasse.h
+	"No.h"
+	<iostream>
+
+1606752911 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\segmento.cpp
+	"Segmento.h"
+
+1606752912 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\segmento.h
+	<iostream>
+
+1606314941 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\datagrama.cpp
+	"Datagrama.h"
+	<iostream>
+
+1606314672 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\datagrama.h
+	<string>
+	"Segmento.h"
+
+1606935382 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\main.cpp
+	<iostream>
+	<fstream>
+	<stdexcept>
+	<list>
+	"PersistenciaDeRede.h"
+	"Rede.h"
+	"Roteador.h"
+	"Hospedeiro.h"
+	"ServidorWeb.h"
+	"Navegador.h"
+
+1606754843 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\no.h
+	<iostream>
+	<stdexcept>
+	"Fila.h"
+	"Datagrama.h"
+
+1606752578 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\no.cpp
+	"No.h"
+
+1606752576 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\fila.h
+	<stdexcept>
+	<iostream>
+	<list>
+	"Datagrama.h"
+
+1606752575 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\fila.cpp
+	"Fila.h"
+
+1606752580 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\roteador.h
+	<stdexcept>
+	<iostream>
+	<list>
+	"Datagrama.h"
+	"TabelaDeRepasse.h"
+	"No.h"
+
+1606936211 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\roteador.cpp
+	"Roteador.h"
+
+1606936209 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\hospedeiro.cpp
+	"Hospedeiro.h"
+
+1606753237 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\hospedeiro.h
+	<stdexcept>
+	<iostream>
+	<list>
+	<vector>
+	"Datagrama.h"
+	"Segmento.h"
+	"TabelaDeRepasse.h"
+	"No.h"
+	"Roteador.h"
+	"Processo.h"
+	"ServidorWeb.h"
+	"Navegador.h"
+
+1606935575 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\rede.cpp
+	"Rede.h"
+
+1606932533 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\rede.h
+	<iostream>
+	<list>
+	<vector>
+	<stdexcept>
+	"No.h"
+	"Hospedeiro.h"
+	<vector>
+
+1606934549 source:c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\persistenciaderede.cpp
+	"PersistenciaDeRede.h"
+	"Roteador.h"
+
+1606929511 c:\users\augus\onedrive\햞ea de trabalho\c++\ep2\ep2\persistenciaderede.h
+	<iostream>
+	<string>
+	<fstream>
+	"Rede.h"
+
+1607021674 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\datagrama.cpp
+	"Datagrama.h"
+	<iostream>
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\datagrama.h
+	<string>
+	"Segmento.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\segmento.h
+	<iostream>
+
+1607021726 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\fila.cpp
+	"Fila.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\fila.h
+	<stdexcept>
+	<iostream>
+	<list>
+	"Datagrama.h"
+
+1607022501 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\hospedeiro.cpp
+	"Hospedeiro.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\hospedeiro.h
+	<stdexcept>
+	<iostream>
+	<list>
+	<vector>
+	"Datagrama.h"
+	"Segmento.h"
+	"TabelaDeRepasse.h"
+	"No.h"
+	"Roteador.h"
+	"Processo.h"
+	"ServidorWeb.h"
+	"Navegador.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\tabeladerepasse.h
+	"No.h"
+	<iostream>
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\no.h
+	<iostream>
+	<stdexcept>
+	"Fila.h"
+	"Datagrama.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\roteador.h
+	<stdexcept>
+	<iostream>
+	<list>
+	"Datagrama.h"
+	"TabelaDeRepasse.h"
+	"No.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\processo.h
+	<iostream>
+	"Roteador.h"
+	"Segmento.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\servidorweb.h
+	"Roteador.h"
+	<string>
+	"Segmento.h"
+	"Processo.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\navegador.h
+	"Processo.h"
+	"Datagrama.h"
+	"ServidorWeb.h"
+
+1607021972 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\main.cpp
+	<iostream>
+	<fstream>
+	<stdexcept>
+	<list>
+	<string>
+	"PersistenciaDeRede.h"
+	"Rede.h"
+	"Roteador.h"
+	"Hospedeiro.h"
+	"ServidorWeb.h"
+	"Navegador.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\persistenciaderede.h
+	<iostream>
+	<string>
+	<fstream>
+	"Rede.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\rede.h
+	<iostream>
+	<list>
+	<vector>
+	<stdexcept>
+	"No.h"
+	"Hospedeiro.h"
+	<vector>
+
+1607022625 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\navegador.cpp
+	"Navegador.h"
+
+1607021740 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\no.cpp
+	"No.h"
+
+1607023050 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\persistenciaderede.cpp
+	"PersistenciaDeRede.h"
+	"Roteador.h"
+
+1607021752 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\processo.cpp
+	"Processo.h"
+
+1607023204 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\rede.cpp
+	"Rede.h"
+
+1607021763 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\roteador.cpp
+	"Roteador.h"
+
+1607021767 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\segmento.cpp
+	"Segmento.h"
+
+1607023445 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\servidorweb.cpp
+	"ServidorWeb.h"
+
+1607021777 source:c:\users\augus\desktop\poli\c++\ep2\ep2\ep2\tabeladerepasse.cpp
+	"TabelaDeRepasse.h"
+
+1607021674 source:c:\users\augus\desktop\poli\c++\ep2\datagrama.cpp
+	"Datagrama.h"
+	<iostream>
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\datagrama.h
+	<string>
+	"Segmento.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\segmento.h
+	<iostream>
+
+1607021726 source:c:\users\augus\desktop\poli\c++\ep2\fila.cpp
+	"Fila.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\fila.h
+	<stdexcept>
+	<iostream>
+	<list>
+	"Datagrama.h"
+
+1607022501 source:c:\users\augus\desktop\poli\c++\ep2\hospedeiro.cpp
+	"Hospedeiro.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\hospedeiro.h
+	<stdexcept>
+	<iostream>
+	<list>
+	<vector>
+	"Datagrama.h"
+	"Segmento.h"
+	"TabelaDeRepasse.h"
+	"No.h"
+	"Roteador.h"
+	"Processo.h"
+	"ServidorWeb.h"
+	"Navegador.h"
+
+1607024041 c:\users\augus\desktop\poli\c++\ep2\tabeladerepasse.h
+	"No.h"
+	<iostream>
+
+1607024110 c:\users\augus\desktop\poli\c++\ep2\no.h
+	<iostream>
+	<stdexcept>
+	"Fila.h"
+	"Datagrama.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\roteador.h
+	<stdexcept>
+	<iostream>
+	<list>
+	"Datagrama.h"
+	"TabelaDeRepasse.h"
+	"No.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\processo.h
+	<iostream>
+	"Roteador.h"
+	"Segmento.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\servidorweb.h
+	"Roteador.h"
+	<string>
+	"Segmento.h"
+	"Processo.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\navegador.h
+	"Processo.h"
+	"Datagrama.h"
+	"ServidorWeb.h"
+
+1607021972 source:c:\users\augus\desktop\poli\c++\ep2\main.cpp
+	<iostream>
+	<fstream>
+	<stdexcept>
+	<list>
+	<string>
+	"PersistenciaDeRede.h"
+	"Rede.h"
+	"Roteador.h"
+	"Hospedeiro.h"
+	"ServidorWeb.h"
+	"Navegador.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\persistenciaderede.h
+	<iostream>
+	<string>
+	<fstream>
+	"Rede.h"
+
+1607019172 c:\users\augus\desktop\poli\c++\ep2\rede.h
+	<iostream>
+	<list>
+	<vector>
+	<stdexcept>
+	"No.h"
+	"Hospedeiro.h"
+	<vector>
+
+1607021740 source:c:\users\augus\desktop\poli\c++\ep2\no.cpp
+	"No.h"
+
+1607023050 source:c:\users\augus\desktop\poli\c++\ep2\persistenciaderede.cpp
+	"PersistenciaDeRede.h"
+	"Roteador.h"
+
+1607021752 source:c:\users\augus\desktop\poli\c++\ep2\processo.cpp
+	"Processo.h"
+
+1607023204 source:c:\users\augus\desktop\poli\c++\ep2\rede.cpp
+	"Rede.h"
+
+1607021763 source:c:\users\augus\desktop\poli\c++\ep2\roteador.cpp
+	"Roteador.h"
+
+1607021767 source:c:\users\augus\desktop\poli\c++\ep2\segmento.cpp
+	"Segmento.h"
+
+1607021777 source:c:\users\augus\desktop\poli\c++\ep2\tabeladerepasse.cpp
+	"TabelaDeRepasse.h"
+

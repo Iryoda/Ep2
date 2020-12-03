@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Ep2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Ep2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="./" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Ep2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="./" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Datagrama.cpp" />
+		<Unit filename="Datagrama.h" />
+		<Unit filename="Fila.cpp" />
+		<Unit filename="Fila.h" />
+		<Unit filename="Hospedeiro.cpp" />
+		<Unit filename="Hospedeiro.h" />
+		<Unit filename="Navegador.cpp" />
+		<Unit filename="Navegador.h" />
+		<Unit filename="No.cpp" />
+		<Unit filename="No.h" />
+		<Unit filename="PersistenciaDeRede.cpp" />
+		<Unit filename="PersistenciaDeRede.h" />
+		<Unit filename="Processo.cpp" />
+		<Unit filename="Processo.h" />
+		<Unit filename="Rede.cpp" />
+		<Unit filename="Rede.h" />
+		<Unit filename="Roteador.cpp" />
+		<Unit filename="Roteador.h" />
+		<Unit filename="Segmento.cpp" />
+		<Unit filename="Segmento.h" />
+		<Unit filename="ServidorWeb.cpp" />
+		<Unit filename="ServidorWeb.h" />
+		<Unit filename="TabelaDeRepasse.cpp" />
+		<Unit filename="TabelaDeRepasse.h" />
+		<Unit filename="arquivo.txt" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
